@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+input::-webkit-calendar-picker-indicator {
+    
+    color: #FFFFFF;
+    opacity: 1;
+    background:  #826A45;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    transform: translateX(9px);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+
+
+
+hr {
+    border-top: 1px solid #F8F9FA;
+    opacity: 0.4;
+}
+
+.float-shadow {
+    filter: drop-shadow(5px 5px 5px #666341);
+    animation-name: floatShadowAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+}
+@keyframes floatShadowAnimation {
+    0% {
+        filter: drop-shadow(5px 5px 5px #64613d);
+    }
+    25% {
+        filter: drop-shadow(5px 5px 5px #716d41);
+    }
+    50% {
+        filter: drop-shadow(5px 5px 5px #fdb100);
+    }
+    75% {
+        filter: drop-shadow(5px 5px 5px #53502a);
+    }
+    100% {
+        filter: drop-shadow(5px 5px 5px #64613d);
+    }
+}
+
