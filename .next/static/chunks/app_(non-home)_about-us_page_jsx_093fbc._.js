@@ -1,0 +1,12 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "static/chunks/app_(non-home)_about-us_page_jsx_093fbc._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "static/chunks/app_(non-home)_about-us_page_jsx_093fbc._.js",
+  "chunks": [
+    "static/chunks/node_modules_framer-motion_dist_es_c5d2c6._.js",
+    "static/chunks/_3745b8._.js"
+  ],
+  "source": "dynamic"
+});

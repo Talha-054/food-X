@@ -29,7 +29,7 @@ export default function Footer() {
   return (
     <>
         <FooterContactInfo />
-        <div className=' flex flex-col justify-start items-center bg-[#1b1b1b]'>
+        <div id='footer' className=' flex flex-col justify-start items-center bg-[#1b1b1b]'>
           <div id='container-1' className='bg-[#2e2d2d] flex p-[1em] md:w-[85vw] md:p-[2em] relative lg:translate-y-[30%] z-10'>
             <div className='flex w-full flex-col xl:flex-row xl:justify-evenly justify-start items-start gap-12 '>
 
@@ -104,7 +104,7 @@ export default function Footer() {
               </div>
           </div>
         </div>
-        <Image src={shopLogo} className=' hidden xl:block z-20 h-[100px] w-[100px] fixed bottom-2 right-2 float-shadow'/>
+        <Image src={shopLogo} className=' hidden xl:block z-20 h-[100px] w-[100px]  fixed bottom-2 right-2 float-shadow'/>
        
     </>
   )

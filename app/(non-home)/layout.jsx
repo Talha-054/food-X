@@ -5,9 +5,9 @@ export default function NonHomeLayout({ children }) {
   return (
     <>
         <Header />
-        <div className='h-[10vh] bg-[#262525]'></div>
+        <div className='h-[6vh] bg-[#262525]'></div>
         {children}
-        <div className='h-[10vh] bg-[#262525]'></div>
+        <div className='h-[6vh] bg-[#262525]'></div>
     </>
   )
 }

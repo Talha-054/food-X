@@ -53,3 +53,13 @@ hr {
     }
 }
 
+.main-logo {
+    filter: drop-shadow(5px 5px 5px #fdb100);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+
+

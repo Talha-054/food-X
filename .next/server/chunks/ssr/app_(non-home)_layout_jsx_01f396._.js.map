@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/orionid/thaya/project/food-X/app/%28non-home%29/layout.jsx"],"sourcesContent":["import Header from \"@/components/header/Header\"\r\nimport \"../globals.css\"\r\nimport Footer from \"@/components/footer/Footer\"\r\nexport default function NonHomeLayout({ children }) {\r\n  return (\r\n    <>\r\n        <Header />\r\n        <div className='h-[6vh] bg-[#262525]'></div>\r\n        {children}\r\n        <div className='h-[6vh] bg-[#262525]'></div>\r\n    </>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAAA;AAEA;;;;;AACe,SAAS,cAAc,EAAE,QAAQ,EAAE;IAChD,qBACE;;0BACI,8OAAC,+HAAA,CAAA,UAAM;;;;;0BACP,8OAAC;gBAAI,WAAU;;;;;;YACd;0BACD,8OAAC;gBAAI,WAAU;;;;;;;;AAGvB"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
