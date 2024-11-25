@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/orionid/thaya/project/food-X/components/reservation%26openingHours/ReservationImage.jsx"],"sourcesContent":["\"use client\"\r\n\r\nimport React from 'react'\r\nimport { useScroll } from 'framer-motion';\r\nimport { useRef } from 'react';\r\nimport { motion } from 'framer-motion';\r\n\r\nexport default function ReservationImage() {\r\n\r\n    const imgRef = useRef();\r\n\r\n    const { scrollYProgress} = useScroll({\r\n        target: imgRef,\r\n        offset: [\"0 1\", \"1 1\"]\r\n\r\n    })\r\n\r\n  return (\r\n    <>\r\n        <motion.div \r\n            style={{\r\n                scale: scrollYProgress,\r\n                opacity: scrollYProgress\r\n                }} \r\n            ref={imgRef} id=\"image\" \r\n            className='absolute md:hidden 2xl:block bg-reservation-img h-[500px] w-[95vw] max-w-[400px] lg:w-[400px] lg:h-[600px] bg-center bg-cover inset-0 m-auto'>\r\n        </motion.div>\r\n    </>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AACA;AAEA;AALA;;;;;;AAOe,SAAS;IAEpB,MAAM,SAAS,CAAA,GAAA,qMAAA,CAAA,SAAM,AAAD;IAEpB,MAAM,EAAE,eAAe,EAAC,GAAG,CAAA,GAAA,yKAAA,CAAA,YAAS,AAAD,EAAE;QACjC,QAAQ;QACR,QAAQ;YAAC;YAAO;SAAM;IAE1B;IAEF,qBACE;kBACI,cAAA,8OAAC,0LAAA,CAAA,SAAM,CAAC,GAAG;YACP,OAAO;gBACH,OAAO;gBACP,SAAS;YACT;YACJ,KAAK;YAAQ,IAAG;YAChB,WAAU;;;;;;;AAItB"}},
-    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
