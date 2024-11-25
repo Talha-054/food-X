@@ -1,0 +1,17 @@
+const CHUNK_PUBLIC_PATH = "server/app/(non-home)/online-order/page.js";
+const runtime = require("../../../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_101e1c._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__adba9d._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa6_index_mjs_d21d9a._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_fa_index_mjs_a1beb0._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_md_index_mjs_c71e7d._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_io5_index_mjs_1653de._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_react-icons_lib_b806b5._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_5ac9d3._.js");
+runtime.loadChunk("server/chunks/ssr/_378555._.js");
+runtime.loadChunk("server/chunks/ssr/app_globals_73c377.css");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_dist_client_components_not-found-error_b76de5.js");
+runtime.loadChunk("server/chunks/ssr/app_(non-home)_layout_jsx_01f396._.js");
+runtime.loadChunk("server/chunks/ssr/_5f8478._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/(non-home)/online-order/page/actions.js [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/(non-home)/online-order/page { MODULE_0 => \"[project]/app/layout.jsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_1 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_2 => \"[project]/app/(non-home)/layout.jsx [app-rsc] (ecmascript, Next.js server component)\", MODULE_3 => \"[project]/node_modules/next/dist/client/components/not-found-error.js [app-rsc] (ecmascript, Next.js server component)\", MODULE_4 => \"[project]/app/(non-home)/online-order/page.jsx [app-rsc] (ecmascript, Next.js server component)\" } [app-rsc] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

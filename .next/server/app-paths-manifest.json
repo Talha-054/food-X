@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/(non-home)/reservation/page": "app/(non-home)/reservation/page.js",
+  "/(non-home)/about-us/page": "app/(non-home)/about-us/page.js",
+  "/(non-home)/menu/page": "app/(non-home)/menu/page.js",
+  "/(non-home)/online-order/page": "app/(non-home)/online-order/page.js"
+}
