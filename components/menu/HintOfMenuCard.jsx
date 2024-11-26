@@ -11,7 +11,7 @@ export default function HintOfMenuCard({data}) {
   return (
     <>
       <div 
-        className=' px-[2em] pb-[3em] pt-[7em] w-full min-w-[350px] md:max-w-[370px] rounded-[25px] relative bg-white'>
+        className=' px-[2em] pb-[3em] pt-[7em] w-full min-w-[300px] md:min-w-[370px] md:max-w-[370px] rounded-[25px] relative bg-white'>
         <h1 className='text-[#04000B] text-center font-body text-[30px] font-semibold mb-[1em]'>{data.heading}</h1>
         <div className='flex flex-col gap-4 w-full'>
           {data?.items?.map((record)=>{
