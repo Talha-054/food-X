@@ -10,6 +10,8 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import footerBorderImg from "../../public/assets/footer-border.png"
 
 const aboutUsData = [
     {name: "youtube", logo: <FaYoutube size={15} color='white'/>},
@@ -95,7 +97,8 @@ export default function FooterDetails() {
               </div>
             </div>
 
-            <div id="footer-top-border" className='absolute hidden xl:block right-0 top-[-7%] w-[85vw] h-[30px] z-20 bg-footer-border'>
+            <div id="footer-top-border" className='absolute hidden xl:block right-0 top-[-7%] w-[85vw] h-[30px] z-20 '>
+              <Image src={footerBorderImg} className='absolute w-full h-full'/>
             </div>
           </motion.div>
     </>
