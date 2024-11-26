@@ -1,5 +1,10 @@
+"use client";
+
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
+
+
 export default function FoodGallery() {
   return (
     <>
@@ -11,9 +16,30 @@ export default function FoodGallery() {
             </div>
             <h2 className='text-center text-[36px] lg:text-[50px] text-[#FFFFFF] font-body font-semibold mb-6'>Our Food Gallery</h2>
             <div id="gallery-food-pics" className='flex flex-col lg:flex-row justify-evenly gap-5 items-center'> 
-                <div id="food-1" className='bg-gallery-food-1 bg-cover bg-center min-h-[350px] w-full'></div>
-                <div id="food-2" className='bg-gallery-food-2 bg-cover bg-center min-h-[350px]  w-full'></div>
-                <div id="food-3" className='bg-gallery-food-3 bg-cover bg-center min-h-[350px]  w-full'></div>
+                <motion.div 
+                  initial={{y:200, opacity:0}}
+                  whileInView={{y:0, opacity:1}}
+                  transition={{duration:0.75, type:"spring"}} 
+                  id="food-1" 
+                  className='bg-gallery-food-1 bg-cover bg-center min-h-[350px] w-full'>
+                </motion.div>
+
+                <motion.div 
+                  initial={{y:200, opacity:0}}
+                  whileInView={{y:0, opacity:1}}
+                  transition={{duration:0.75, delay:0.1, type:"spring"}} 
+                  id="food-2"
+                  className='bg-gallery-food-2 bg-cover bg-center min-h-[350px]  w-full'>
+                </motion.div>
+
+                <motion.div
+                  initial={{y:200, opacity:0}}
+                  whileInView={{y:0, opacity:1}}
+                  transition={{duration:0.75, delay:0.2, type:"spring"}}  
+                  id="food-3" 
+                  className='bg-gallery-food-3 bg-cover bg-center min-h-[350px]  w-full'>
+                  
+                </motion.div>
             </div>
         </div>
     </>

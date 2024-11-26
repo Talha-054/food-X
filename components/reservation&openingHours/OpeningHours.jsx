@@ -1,4 +1,7 @@
+"use client";
+
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const openingTimes = [
     { day: "Monday", timing: "8 am - 9 am" },
@@ -13,7 +16,12 @@ const openingTimes = [
 export default function OpeningHours() {
   return (
     <>
-        <div id='openingHoours' className=' bg-[#826A45] p-[1em] py-[10em] w-full lg:flex lg:justify-center lg:items-end lg:pr-[5em] lg:flex-col'>
+        <motion.div 
+            initial= {{x:200, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{ duration:0.75, delay: 0.15, type:"spring"}}
+            id='openingHoours' 
+            className=' bg-[#826A45] p-[1em] py-[10em] w-full lg:flex lg:justify-center lg:items-end lg:pr-[5em] lg:flex-col'>
                 <h2 className='text-[36px] lg:text-[50px] font-body text-[#FFFFFF] font-semibold mb-8 mt-12'>
                     Opening Hours
                 </h2>
@@ -28,7 +36,7 @@ export default function OpeningHours() {
                         </>
                     )
                 })}
-            </div>
+            </motion.div>
     </>
   )
 }

@@ -1,9 +1,16 @@
+"use client";
+
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Reservation() {
   return (
     <>
-        <div className="form w-full p-[1em] pb-[20em] flex flex-col justify-center items-center lg:items-start lg:pb-0 lg:pl-[7em]">
+        <motion.div 
+            initial={{x: -200, opacity:0}}
+            whileInView={{x:0, opacity:1}}
+            transition={{duration: 0.75, delay:0.15, type:"spring"}}
+            className="form w-full p-[1em] pb-[20em] flex flex-col justify-center items-center lg:items-start lg:pb-0 lg:pl-[7em]">
                 <div className='flex flex-col w-full lg:w-auto lg:justify-center lg:items-center '>
                     <div className='w-full'>
                         <h2 className='font-body text-[#FFFFFF] text-[36px] lg:text-[50px] mb-8 font-semibold'>Book a table</h2>
@@ -28,7 +35,7 @@ export default function Reservation() {
                         <button className='w-[175px] h-[55px] bg-[#826a45] text-[#FFFFFF] font-bold rounded-[5px]'>Book a Table</button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
     </>
   )
 }

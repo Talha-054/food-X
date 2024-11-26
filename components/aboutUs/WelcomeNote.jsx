@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 export default function WelcomeNote() {
 
-  const isMobile = window.matchMedia("(max-width: 1024px)").matches
+  const [isMobile, setIsMobile] = useState(null); 
   const welcomeNoteRef = useRef();
 
   const { scrollYProgress} = useScroll({
@@ -20,7 +20,19 @@ export default function WelcomeNote() {
   const animate = isMobile?  {} : {
     translateX: '-70px',
     translateY: '60px'
-  } 
+  }
+  
+  useEffect(()=>{
+    setIsMobile(window?.matchMedia("(max-width: 1024px)").matches)
+  },[])
+
+  // function screenSize(){
+  //   if (window){
+  //     return window?.matchMedia("(max-width: 1024px)").matches
+  //   }else {
+  //     return false
+  //   }
+  // }
 
   return (
     <>     
@@ -32,7 +44,7 @@ export default function WelcomeNote() {
         }}
         animate= {animate} 
         id="welcome-note-text" 
-        className= {'lg:p-[5em] p-[1em] max-w-[775px]  lg:bg-[#262525] z-10 lg:translate-y-20 lg:-translate-x-28'}>
+        className= {'lg:p-[5em] p-[1em] max-w-[775px]  lg:bg-[#262525] z-10 '}>
           <h2 className='mb-2 text-[#FFFFFF] font-body text-[20px] font-bold'>ABOUT US</h2>
           <h2 className='text-[36px] lg:text-[50px] text-[#FFFFFF] font-body font-bold'>We invite You</h2>
           <h2 className='font-body text-[36px] lg:text-[50px] text-[#FFFFFF] font-bold'>To Visit Our Restaurant</h2>
