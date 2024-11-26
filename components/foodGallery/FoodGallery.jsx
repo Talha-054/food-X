@@ -25,7 +25,7 @@ export default function FoodGallery() {
                   transition={{duration:0.75, type:"spring"}} 
                   id="food-1" 
                   className='relative min-h-[350px] w-full'>
-                    <Image src={galleryFood1} className='absolute w-full h-full top-0'/>
+                    <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood1} className='absolute w-full h-full top-0'/>
                 </motion.div>
 
                 <motion.div 
@@ -34,7 +34,7 @@ export default function FoodGallery() {
                   transition={{duration:0.75, delay:0.1, type:"spring"}} 
                   id="food-2"
                   className='relative min-h-[350px]  w-full'>
-                    <Image src={galleryFood2} className='absolute w-full h-full top-0'/>
+                    <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood2} className='absolute w-full h-full top-0'/>
                 </motion.div>
 
                 <motion.div
@@ -43,7 +43,7 @@ export default function FoodGallery() {
                   transition={{duration:0.75, delay:0.2, type:"spring"}}  
                   id="food-3" 
                   className='relative min-h-[350px]  w-full'>
-                    <Image src={galleryFood3} className='absolute w-full h-full top-0'/>
+                    <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood3} className='absolute w-full h-full top-0'/>
                 </motion.div>
             </div>
         </div>

@@ -64,7 +64,7 @@ export default function HintOfMenu() {
               </>
             )
           })}
-          <Image src={bgImg} className='absolute h-full w-full top-0'/>
+          <Image layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>
         </div>
     </>
   )

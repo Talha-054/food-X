@@ -26,7 +26,7 @@ export default function AboutUs() {
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
                 className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
-                  <Image src={abtUsImg1} className='absolute  h-full  w-full top-0  '/>
+                  <Image layout='fill' objectPosition='top' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
               </motion.div>
               
               <motion.div
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 transition={{duration: 1, type: "spring"}}  
                 id="welcome-note-img-2" 
                 className="relative hidden lg:block w-full h-[300px] lg:w-[360px] lg:h-[525px]">
-                  <Image src={abtUsImg2} className='absolute h-full w-full top-0'/>
+                  <Image layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg2} className='absolute h-full w-full top-0'/>
               </motion.div>
               
               
