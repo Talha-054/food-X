@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from "../../public/assets/thaya-logo-light.png"
 import Image from 'next/image';
 import Link from 'next/link';
@@ -20,7 +20,11 @@ const sidebarData =[
 ]
 
 
+
+
 export default function Sidebar({activeSegment, handleSidebar, sidebarStatus}) {
+
+  
 
   return (
     <>
@@ -43,7 +47,7 @@ export default function Sidebar({activeSegment, handleSidebar, sidebarStatus}) {
               return (
                 <>
                   <div key={index} className='w-20 h-20 border-[#EB5B00] border-[1px] z-10 rounded-full flex justify-center items-center'>
-                    <Link href={item.href} className={`text-[#fdb100] ${activeSegment == item.activeSegment ? "text-[#FFDC8A]" : "text-[#fdb100]"} font-body font-bold text-[16px] hover:text-[#FFDC8A]`}>{item.text}</Link>
+                    <Link onClick={handleSidebar} href={item.href} className={`text-[#fdb100] ${activeSegment == item.activeSegment ? "text-[#FFDC8A]" : "text-[#fdb100]"} font-body font-bold text-[16px] hover:text-[#FFDC8A]`}>{item.text}</Link>
                   </div>
                 </>
               )
