@@ -4,6 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import WelcomeNote from './WelcomeNote'
 import { motion } from 'framer-motion';
+import abtUsImg1 from "../../public/assets/welcome-note-1.jpg"
+import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
 
 export default function AboutUs() {
 
@@ -23,7 +25,8 @@ export default function AboutUs() {
                 whileInView={{x:0}}
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
-                className="bg-welcome-note-1 bg-top bg-cover w-full h-[300px] lg:w-[360px] lg:h-[525px]">
+                className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
+                  <Image src={abtUsImg1} className='absolute top-0 w-full h-full'/>
               </motion.div>
               
               <motion.div
@@ -31,7 +34,8 @@ export default function AboutUs() {
                 whileInView={{x:0}}
                 transition={{duration: 1, type: "spring"}}  
                 id="welcome-note-img-2" 
-                className="bg-welcome-note-2 hidden lg:block bg-top bg-cover w-full h-[300px] lg:w-[360px] lg:h-[525px]">
+                className="relative hidden lg:block w-full h-[300px] lg:w-[360px] lg:h-[525px]">
+                  <Image src={abtUsImg2} className='absolute h-full w-full top-0'/>
               </motion.div>
               
               

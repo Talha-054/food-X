@@ -26,11 +26,11 @@ export default function Header() {
 
   return (
     <>
-        <header id='navbar' className={`lg:h-auto z-20 px-[12px] py-[1em] pt-[5px] flex relative justify-center gap-24 items-center ${pathName == "/"? "":"bg-[#1b1b1b]"}`}>
+        <header id='navbar' className={`lg:h-auto overflow-hidden z-20 px-[12px] py-[1em] pt-[5px] flex relative justify-center gap-24 items-center ${pathName == "/"? "":"bg-[#1b1b1b]"}`}>
             <Navbar sidebarHandler={toogleSidebar}/>
         </header>
 
-       {sidebarVisible && <Sidebar handleSidebar={toogleSidebar} activeSegment={activeSegment}/>}
+       {sidebarVisible && <Sidebar handleSidebar={toogleSidebar} sidebarStatus={sidebarVisible} activeSegment={activeSegment}/>}
     </>
   )
 }

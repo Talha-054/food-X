@@ -3,6 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
+import galleryFood1 from "../../public/assets/gallery-food-1.jpg"
+import galleryFood2 from "../../public/assets/gallery-food-2.jpg"
+import galleryFood3 from "../../public/assets/gallery-food-3.jpg"
 
 
 export default function FoodGallery() {
@@ -21,7 +24,8 @@ export default function FoodGallery() {
                   whileInView={{y:0, opacity:1}}
                   transition={{duration:0.75, type:"spring"}} 
                   id="food-1" 
-                  className='bg-gallery-food-1 bg-cover bg-center min-h-[350px] w-full'>
+                  className='relative min-h-[350px] w-full'>
+                    <Image src={galleryFood1} className='absolute w-full h-full top-0'/>
                 </motion.div>
 
                 <motion.div 
@@ -29,7 +33,8 @@ export default function FoodGallery() {
                   whileInView={{y:0, opacity:1}}
                   transition={{duration:0.75, delay:0.1, type:"spring"}} 
                   id="food-2"
-                  className='bg-gallery-food-2 bg-cover bg-center min-h-[350px]  w-full'>
+                  className='relative min-h-[350px]  w-full'>
+                    <Image src={galleryFood2} className='absolute w-full h-full top-0'/>
                 </motion.div>
 
                 <motion.div
@@ -37,8 +42,8 @@ export default function FoodGallery() {
                   whileInView={{y:0, opacity:1}}
                   transition={{duration:0.75, delay:0.2, type:"spring"}}  
                   id="food-3" 
-                  className='bg-gallery-food-3 bg-cover bg-center min-h-[350px]  w-full'>
-                  
+                  className='relative min-h-[350px]  w-full'>
+                    <Image src={galleryFood3} className='absolute w-full h-full top-0'/>
                 </motion.div>
             </div>
         </div>
