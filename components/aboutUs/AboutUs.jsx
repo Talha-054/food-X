@@ -26,7 +26,7 @@ export default function AboutUs() {
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
                 className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
-                  <Image src={abtUsImg1} className='absolute top-0 w-full h-full'/>
+                  <Image src={abtUsImg1} className='absolute  h-full  w-full top-0  '/>
               </motion.div>
               
               <motion.div

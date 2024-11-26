@@ -7,6 +7,7 @@ import Link from 'next/link';
 import restaurantDrawing from "../../public/assets/footer-restaurant.png"
 import { RiCloseLargeLine } from "react-icons/ri";
 import { motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 
 const sidebarData =[
@@ -23,9 +24,16 @@ export default function Sidebar({activeSegment, handleSidebar, sidebarStatus}) {
 
   return (
     <>
-        <motion.div
+      <AnimatePresence mode='sync'>
+        
+        {sidebarStatus && <motion.div
+          layout
+          initial={{scale:0, opacity:0}}
+          animate= {{scale:1, opacity:1}}
+          exit={{scale: 0, opacity:0}}
+          transition={{ease: "backOut"}}
           id='sidebar' 
-          className={`fixed  duration-300 w-screen top-0 bg-[#1b1b1b] z-[99] flex-col justify-start items-start p-[1em]`}>
+          className={`fixed  min-h-screen w-screen top-0 bg-[#1b1b1b] z-[99] flex-col justify-start items-start p-[1em]`}>
           <div className='w-full flex justify-center items-center border-b-[2px] border-[#262525] mb-8'>
               <Image className='w-[150px] p-[5px]  h-[150px] lg:fil translate-y-[3px] main-logo ' decoding="async" title="thaya-footer-logo-min" src={logo} alt=""  srcSet="https://thaya-restaurant.de/wp-content/uploads/2021/02/thaya-footer-logo-min-200x78.png 200w, https://thaya-restaurant.de/wp-content/uploads/2021/02/thaya-footer-logo-min-400x156.png 400w, https://thaya-restaurant.de/wp-content/uploads/2021/02/thaya-footer-logo-min.png 426w"  />
           </div>
@@ -42,11 +50,12 @@ export default function Sidebar({activeSegment, handleSidebar, sidebarStatus}) {
             })}
 
             <div className='flex w-full justify-center items-center'>
-              <Image src={restaurantDrawing} width={215} className='opacity-30 -translate-y-12  h-[200px] w-full'/>
+              <Image src={restaurantDrawing} width={215} className='opacity-30  h-[200px] w-full'/>
             </div>
           </div>
           <button onClick={handleSidebar} className='absolute top-5 p-[0.5em] right-5'><RiCloseLargeLine size={20} color='#FFFFFF'/></button>
-        </motion.div>
+        </motion.div>}
+      </AnimatePresence>
     </>
   )
 }
