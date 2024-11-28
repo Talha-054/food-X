@@ -13,19 +13,19 @@ export default function OnlineOrder() {
 
                 <div id="section-2" className='grow p-[1em] '>
                   <div className='flex justify-center lg:justify-start items-center mb-6'>
-                    <h2 className='text-[#FFFFFF] text-[36px] md:text-[50px] font-body font-bold text-center lg:text-start max-w-[350px] md:max-w-[410px] lg:max-w-[500px]'>Are you Ready to start your online Order?</h2>
+                    <h2 className='text-[#FFFFFF] text-[36px] md:text-[50px] font-body font-bold text-center lg:text-start max-w-[350px] md:max-w-[410px] lg:max-w-[500px]'>Sind Sie bereit, Ihre Online-Bestellung zu beginnen?</h2>
                   </div>
                   <div className='flex justify-center lg:justify-start items-center mb-6'>
                     <p className='text-[#CCCCCC] text-[16px] font-body font-medium text-center lg:text-start max-w-[350px] md:max-w-[410px] lg:max-w-[500px]'>
-                      Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now 
+                    Genießen Sie die authentischen Aromen Indiens in unserem Restaurant. Von aromatischen Currys bis hin zu würzigen Biryanis, jedes Gericht wird mit Leidenschaft und Tradition zubereitet. Ob Sie nun scharfes Street Food oder klassische Wohlfühlspeisen suchen, unsere einladende Atmosphäre sorgt für ein unvergessliches Erlebnis. Kommen Sie zu uns und erleben Sie den Geschmack Indiens wie nie zuvor! 
                     </p>
                   </div>
                   <div className='flex flex-col md:flex-row gap-4 justify-center lg:justify-start items-center  mb-6'>
                     <Link href="/online-order">
-                      <button  className='rounded-full  py-4 bg-[#826A45] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
+                      <button  className='rounded-full  py-4 bg-[#760124] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
                     </Link>
                     <Link href="/online-order">
-                      <button  className='rounded-full  py-4 bg-[#826A45] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
+                      <button  className='rounded-full  py-4 bg-[#760124] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
                     </Link>
                   </div>                  
                 </div>

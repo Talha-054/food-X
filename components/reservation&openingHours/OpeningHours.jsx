@@ -4,13 +4,13 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const openingTimes = [
-    { day: "Monday", timing: "8 am - 9 am" },
-    { day: "Tuesday", timing: "3 am - 5 am" },
-    { day: "Wednesday", timing: "12 am - 1 am" },
-    { day: "Thursday", timing: "7 am - 9 am" },
-    { day: "Friday", timing: "5 am - 7 am" },
-    { day: "Saturday", timing: "10 am - 12 am" },
-    { day: "Sunday", timing: "1 am - 2 am" }
+    { day: "Montag", timing: "8 am - 9 am" },
+    { day: "Dienstag", timing: "3 am - 5 am" },
+    { day: "Mittwoch", timing: "12 am - 1 am" },
+    { day: "Donnerstag", timing: "7 am - 9 am" },
+    { day: "Freitag", timing: "5 am - 7 am" },
+    { day: "Samstag", timing: "10 am - 12 am" },
+    { day: "Sonntag", timing: "1 am - 2 am" }
   ]
 
 export default function OpeningHours() {
@@ -23,7 +23,7 @@ export default function OpeningHours() {
             id='openingHoours' 
             className=' bg-[#826A45] p-[1em] py-[10em] w-full lg:flex lg:justify-center lg:items-end lg:pr-[5em] lg:flex-col'>
                 <h2 className='text-[36px] lg:text-[50px] font-body text-[#FFFFFF] font-semibold mb-8 mt-12'>
-                    Opening Hours
+                    Öffnungszeiten.
                 </h2>
                 {openingTimes.map((record, index)=>{
                     return (

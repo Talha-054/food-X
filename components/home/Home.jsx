@@ -1,10 +1,11 @@
 import React from 'react'
 import Hero from './Hero'
 import AboutUs from '../aboutUs/AboutUs'
-import FoodGallery from '../foodGallery/FoodGallery'
+import FoodGallery from '../foodGallery/Gallery'
 import HintOfMenu from '../menu/HintOfMenu'
 import OnlineOrder from '../order/OnlineOrder'
 import ReservationAndOpeningHrs from '../reservation&openingHours/ReservationAndOpeningHrs'
+import Gallery from '../foodGallery/Gallery'
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
         <HintOfMenu />
-        <FoodGallery />
+        <Gallery />
         <div className='h-[10vh] bg-[#262525]'></div>
         <ReservationAndOpeningHrs />
         <div className='h-[10vh] bg-[#262525]'></div>

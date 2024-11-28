@@ -4,12 +4,15 @@ import React from 'react'
 import Image from 'next/image'
 import WelcomeNote from './WelcomeNote'
 import { motion } from 'framer-motion';
-import abtUsImg1 from "../../public/assets/welcome-note-1.jpg"
-import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
+// import abtUsImg1 from "../../public/assets/welcome-note-1.jpg"
+// import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
+import abtUsImg1 from "../../public/assets/thaya-6.png"
+import abtUsImg2 from "../../public/assets/thaya-9.png"
 
 export default function AboutUs() {
 
   
+ 
 
   return (
     <>
@@ -26,7 +29,7 @@ export default function AboutUs() {
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
                 className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
-                  <Image layout='fill' objectPosition='top' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
+                  <Image layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
               </motion.div>
               
               <motion.div
@@ -47,6 +50,8 @@ export default function AboutUs() {
             <Image decoding="async" color="#FFFFFF" width={212} height={100} src="https://wp.validthemes.net/restan/wp-content/uploads/2024/01/2-1.png" alt="Restan" />
           </motion.div>
         </motion.div>
+
+        
     </>
   )
 }

@@ -14,8 +14,10 @@ export default function WelcomeNote() {
 
   const { scrollYProgress} = useScroll({
     target: welcomeNoteRef,
-    offset: ["0 1", "1.1 1"]
+    offset: ["0 1", "1 1"]
   })
+  console.log(scrollYProgress);
+  
 
   const animate = isMobile?  {} : {
     translateX: '-70px',
@@ -45,13 +47,13 @@ export default function WelcomeNote() {
         animate= {animate} 
         id="welcome-note-text" 
         className= {'lg:p-[5em] p-[1em] max-w-[775px]  lg:bg-[#262525] z-10 '}>
-          <h2 className='mb-2 text-[#FFFFFF] font-body text-[20px] font-bold'>ABOUT US</h2>
-          <h2 className='text-[36px] lg:text-[50px] text-[#FFFFFF] font-body font-bold'>We invite You</h2>
-          <h2 className='font-body text-[36px] lg:text-[50px] text-[#FFFFFF] font-bold'>To Visit Our Restaurant</h2>
-          <p className='mb-6 text-[16px] text-[#CCCCCC] font-normal'>
-          A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</p>
+          <h2 className='mb-2 text-[#FFFFFF] font-body text-[20px] font-bold'>ÜBER UNS.</h2>
+          <h2 className='text-[36px] lg:text-[50px] text-[#FFFFFF] font-body font-semibold'>Wir laden Sie ein.</h2>
+          <h2 className='font-body text-[36px] lg:text-[50px] text-[#FFFFFF] font-semibold'>Unser Restaurant zu besuchen.</h2>
+          <p className='mb-8 text-[16px] text-[#CCCCCC] font-medium'>
+          Wir laden Sie herzlich ein unsere traditionelle nord-indische Küche mit ihren exotischen Zutaten, wie Curry, den vielfältigen Gewürzen und Kräutern, bei klassischer Atmosphäre zu genießen.</p>
           <Link href={"./about-us"}>
-            <button type='button' className='w-[175px] h-[55px] bg-[#826a45] text-[#FFFFFF] font-semibold'>Discover More</button>
+            <button type='button' className='w-[175px] h-[55px] bg-[#760124] text-[#FFFFFF] font-semibold'>Entdecken Sie mehr.</button>
           </Link>
       </motion.div>  
     </>

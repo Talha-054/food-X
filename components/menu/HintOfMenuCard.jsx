@@ -4,9 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
+
 export default function HintOfMenuCard({data}) {
 
-
+ 
 
   return (
     <>
@@ -14,7 +15,7 @@ export default function HintOfMenuCard({data}) {
         className=' px-[2em] pb-[3em] pt-[7em] w-full min-w-[300px] md:min-w-[370px] md:max-w-[370px] rounded-[25px] relative bg-white'>
         <h1 className='text-[#04000B] text-center font-body text-[30px] font-semibold mb-[1em]'>{data.heading}</h1>
         <div className='flex flex-col gap-4 w-full'>
-          {data?.items?.map((record)=>{
+          { data?.items?.map((record)=>{
             return (
               <>
                 <div className='flex justify-between relative w-full'>
@@ -27,7 +28,7 @@ export default function HintOfMenuCard({data}) {
           })}
           <div className='flex justify-center items-center mt-[1em]'>
             <Link href={"/menu"}>
-              <button className='rounded-full px-4 py-4 bg-[#826A45] w-[185px] text-[#FFFFFF] font-semibold'>Make Order</button>
+              <button className='rounded-full px-4 py-4 bg-[#760124] w-[185px] text-[#FFFFFF] font-semibold'>Bestellung aufgeben</button>
             </Link>
             
           </div>

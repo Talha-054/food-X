@@ -19,11 +19,13 @@ const aboutUsData = [
     {name: "linkedIn", logo: <FaLinkedinIn size={15} color='white'/>},
     {name: "X", logo: <FaTwitter size={15} color='white'/>},
 ]
-  
+
+  // contact info
+
   const contactData = [
-    {name: "location", text: "1/111 ARF PAC Kamra, Attock PC-43600", icon: <IoLocationSharp size={20} color='white'/>},
-    {name: "cell-number", text: "+920311112312", icon: <FaPhone size={20} color='white'/>},
-    {name: "email", text: "test@gmail.com", icon: <MdEmail size={20} color='white'/>},
+    {name: "location", text: "Ratiborerstr. 4027578 Bremerhaven", icon: <IoLocationSharp size={20} color='white'/>},
+    {name: "cell-number", text: "+49(0)47196157933", icon: <FaPhone size={20} color='white'/>},
+    {name: "email", text: "info(at)thaya-restaurant.de", icon: <MdEmail size={20} color='white'/>},
 ]
 
 
@@ -36,12 +38,12 @@ export default function FooterDetails() {
          transition={{duration:0.75, type:"spring"}}
           id='container-1' 
           className='bg-[#2e2d2d] flex p-[1em] md:w-[85vw] md:p-[2em] relative lg:translate-y-[30%] z-10'>
-            <div className='flex w-full flex-col xl:flex-row xl:justify-evenly justify-start items-start gap-12 '>
+            <div className='flex w-full flex-col xl:flex-row xl:justify-evenly justify-start items-start gap-12 xl:gap-0 '>
               <div className="section-1 w-full flex flex-col md:flex-row md:justify-evenly md:gap-0 gap-10">
                 <div className='md:border-r-[1px] border-[F8F9FA] border-opacity-50 md:pr-[1em]'>
-                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold'>About Us</h2>
+                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold'>Über uns</h2>
                   <p className='text-[16px] text-[#CCCCCC] font-body font-normal my-8 md:max-w-[220px]'>
-                    Continued at zealously necessary is Surrounded sir motionless she end literature. Gay direction neglected.
+                  Von der Vorspeise bis zum Dessert – lassen Sie sich von der Vielfalt der indischen Küche und ihren einzigartigen Gewürzen verzaubern.
                   </p>
                   <div className='flex gap-2'>
                     {aboutUsData.map((record)=>{
@@ -54,13 +56,13 @@ export default function FooterDetails() {
                   </div>
                 </div>
                 <div>
-                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold mb-8'>Explore</h2>
+                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold mb-8'>Entdecken Sie</h2>
                   <div className='flex flex-col gap-4'>
-                    <p className='text-[16px] font-body text-[#CCCCCC]'>About</p>
-                    <p className='text-[16px] font-body text-[#CCCCCC]'>Contact</p>
-                    <p className='text-[16px] font-body text-[#CCCCCC]'>Career</p>
-                    <p className='text-[16px] font-body text-[#CCCCCC]' >Company Profile</p>
-                    <p className='text-[16px] font-body text-[#CCCCCC]'>Help Center</p>
+                    <p className='text-[16px] font-body text-[#CCCCCC] cursor-pointer'>Über uns</p>
+                    <p className='text-[16px] font-body text-[#CCCCCC]  cursor-pointer'>Kontakt</p>
+                    <p className='text-[16px] font-body text-[#CCCCCC]  cursor-pointer'>Speisekarte</p>
+                    <p className='text-[16px] font-body text-[#CCCCCC]  cursor-pointer' >Galerie</p>
+                    <p className='text-[16px] font-body text-[#CCCCCC]  cursor-pointer'>Reservierung</p>
                   </div>
                 </div>
               </div>
@@ -68,13 +70,13 @@ export default function FooterDetails() {
 
               <div className="section-2 w-full flex flex-col md:flex-row md:justify-evenly md:gap-0 md:pl-[4em] xl:pl-0  gap-10">
                 <div>
-                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold mb-8'>Contact Info</h2>
+                  <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold mb-8'>Kontaktinformationen.</h2>
                   <div className='flex flex-col gap-6'>
                     {contactData.map((record)=>{
                       return (
                         <>
                         <div className='flex gap-4 justify-start items-center' key={record.name}>
-                          <span className='bg-[#826A45] h-[35px] w-[35px] flex justify-center items-center'>{record.icon}</span>
+                          <span className='bg-[#760124] h-[35px] w-[35px] flex justify-center items-center'>{record.icon}</span>
                           <p className='text-[16px] text-[#FFFFFF] font-medium font-body md:max-w-[200px]'>{record.text}</p>
                         </div>
                         </>
@@ -86,10 +88,10 @@ export default function FooterDetails() {
                 <div className=''>
                   <h2 className='text-[24px] text-[#FFFFFF] font-body font-semibold mb-8'>Newsletter</h2>
                   <p className='text-[16px] text-[#CCCCCC] font-body font-normal my-8 max-w-[250px]'>
-                    Join our subscribers list to get the latest news and special offers.
+                  Treten Sie unserer Abonnentenliste bei, um die neuesten Nachrichten und Sonderangebote zu erhalten.
                   </p>
                   <label htmlFor='email' className='relative'>
-                    <input placeholder='Your Email' className='w-full md:w-[250px] text-[#FFFFFF] font-body px-2 focus:outline-none h-[50px] bg-[#2e2d2d] border-b-[1px] border-[#F8F9FA] border-opacity-50' type="text" name="" id="email" />
+                    <input placeholder='Ihre E-Mail.' className='w-full md:w-[250px] text-[#FFFFFF] font-body px-2 focus:outline-none h-[50px] bg-[#2e2d2d] border-b-[1px] border-[#F8F9FA] border-opacity-50' type="text" name="" id="email" />
                     <span className='h-[50px] w-[50px] bg-[#2e2d2d] z-10 flex justify-center items-center absolute top-0 -translate-y-[30%] right-0'><FaArrowRight color='white' size={15}/></span>
                   </label>
                   

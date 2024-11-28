@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
           </div>
         </div>
-        <Image src={shopLogo} className=' hidden xl:block z-20 h-[100px] w-[100px]  fixed bottom-2 right-2 float-shadow'/>
+        {/* <Image src={shopLogo} className=' hidden xl:block z-20 h-[100px] w-[100px]  fixed bottom-2 right-2 float-shadow'/> */}
        
     </>
   )

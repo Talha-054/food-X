@@ -8,35 +8,37 @@ import img3 from "../../public/assets/menu-food-3.png"
 import { motion, useInView } from 'framer-motion';
 import bgImg from "../../public/assets/menu-hint.jpg"
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import MenuCard from './MenuCard';
 
 
 const menuHintData =  [
   {
-  heading: "Breakfast",
+  heading: "Vegane Spezialitäten",
   src: img1,
   items: [
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},]
+  {name: "Vegan Dal", priceRange: "12,90 €"},
+  {name: "Tofu Matar", priceRange: "12,90 €"},
+  {name: "Tofu Kokos", priceRange: "12,90 €"},
+  {name: "Tofu Saagwala", priceRange: "12,90 €"},]
 },
 {
-  heading: "Lunch",
+  heading: "Vorspeisen",
   src: img2,
   items: [
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},]
+  {name: "Mix Pakora", priceRange: "8,50 €"},
+  {name: "Gobi Pakora", priceRange: "8,50 €"},
+  {name: "Paneer Pakora", priceRange: "8,90 €"},
+  {name: "Chicken Pakora", priceRange: "8,90 €"},]
 },
 {
-  heading: "Dinner",
+  heading: "Tandoori Grillgerichte",
   src: img3,
   items: [
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},
-  {name: "random-1", priceRange: "$10-$12"},]
+  {name: "Tandoori Chicken Tikka", priceRange: "17,00 €"},
+  {name: "Tandoori Chicken", priceRange: "17,00 €"},
+  {name: "Paneer Tikka", priceRange: "17,00 €"},
+  {name: "GrillPlatte", priceRange: "19,90 €"},]
 }
 ]
 
@@ -44,12 +46,13 @@ const menuHintData =  [
 
 export default function HintOfMenu() {
 
-
+  const path = usePathname();
+  const isMenu = path === "/menu"
 
   return (
     <>
         <div className='min-h-screen overflow-hidden p-[1em] pt-[16em] pb-[7em] flex flex-wrap justify-center gap-48 2xl:gap-12 items-center relative'>
-          {menuHintData.map((data, index)=>{
+          {!isMenu && menuHintData.map((data, index)=>{
             return (
               <>
                 <motion.div
@@ -57,6 +60,7 @@ export default function HintOfMenu() {
                   initial= {{scale: 0.5, opacity: 0}}
                   whileInView={{scale:1, opacity: 1}}
                   transition={{delay: 0.10*index, type:"spring"}}
+                  viewport={{margin: "50px"}}
                 >
                   <HintOfMenuCard data={data}/>
                 </motion.div>
@@ -64,6 +68,7 @@ export default function HintOfMenu() {
               </>
             )
           })}
+          {/* {isMenu && <MenuCard />} */}
           <Image layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>
         </div>
     </>
