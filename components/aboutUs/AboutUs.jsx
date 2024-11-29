@@ -20,7 +20,7 @@ export default function AboutUs() {
     <>
         <motion.div
             
-            className=" py-28 pb-36 bg-[#1b1b1b] flex flex-col lg:flex-row relative">
+            className=" py-28 pb-36 bg-[#1b1b1b] flex justify-center flex-col lg:flex-row relative">
           
           <div
             className="welcome-note-images flex gap-10">

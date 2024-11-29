@@ -72,9 +72,9 @@ export default function HintOfMenu() {
             );
           })}
         {isMenu && <CompleteMenu />}
-        {!isMenu && (
+        {/* {!isMenu && (
           <Image
-          style={{backgroundImage: "url('assets/pattern.png')", backgroundRepeat: "repeat", backgroundSize: "cover"}}
+          style={{backgroundImage: "url('assets/pattern.png')", backgroundRepeat: "repeat", backgroundSize: "cover", opacity:0}}
             alt="menu background image"
             quality={100}
             fill={true}
@@ -82,7 +82,16 @@ export default function HintOfMenu() {
             className="absolute  top-0"
             src={bgImg}
           />
-        )}
+          
+        )} */}
+        <div
+          style={{
+            backgroundImage: "url('assets/pattern.png')",
+            backgroundRepeat: "repeat",
+            backgroundSize: "contain",
+          }}
+          className="absolute h-full w-full top-0 left-0 "
+        />
       </div>
     </>
   );
