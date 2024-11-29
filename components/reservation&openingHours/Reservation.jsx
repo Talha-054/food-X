@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { MdError } from "react-icons/md";
+import { sendEmail } from 'utils/api-calls';
 
 export default function Reservation() {
 
@@ -83,18 +84,30 @@ export default function Reservation() {
 
     }
 
-    function handleFormSubmission(){
+    const handleFormSubmission = async () => {
     
     if (!formValid) return;
 
-    const data = {
+    const dataToSend = {
         phoneNo : phoneNo,
         persons : persons,
         date : date,
         time : time
     }
 
-    console.log(data);
+    const data = await sendEmail({
+        name: "Talha",
+        message: "check",
+        email: "talha.fullstackdev@gmail.com",
+      });
+    // const data = {
+    //     phoneNo : phoneNo,
+    //     persons : persons,
+    //     date : date,
+    //     time : time
+    // }
+
+
     }
 
 
