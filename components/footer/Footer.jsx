@@ -2,7 +2,6 @@ import React from "react";
 
 import Image from "next/image";
 import restaurantDrawing from "../../public/assets/footer-restaurant.png";
-import shopLogo from "../../public/assets/thaya-logo-light.png";
 import FooterContactInfo from "./FooterIContactInfo";
 import FooterDetails from "./FooterDetails";
 import Link from "next/link";

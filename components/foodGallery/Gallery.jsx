@@ -2,23 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion';
-import galleryFood1 from "../../public/assets/gallery-food-1.jpg"
-import galleryFood2 from "../../public/assets/gallery-food-2.jpg"
-import galleryFood3 from "../../public/assets/gallery-food-3.jpg"
-import thaya0 from "../../public/assets/thaya-0.png"
-import thaya1 from "../../public/assets/thaya-1.png"
-import thaya2 from "../../public/assets/thaya-2.png"
-import thaya3 from "../../public/assets/thaya-3.png"
-import thaya4 from "../../public/assets/thaya-4.png"
-import thaya5 from "../../public/assets/thaya-5.png"
-import thaya6 from "../../public/assets/thaya-6.png"
-import thaya7 from "../../public/assets/thaya-7.png"
-import thaya8 from "../../public/assets/thaya-8.png"
-import thaya9 from "../../public/assets/thaya-9.png"
-import thaya10 from "../../public/assets/thaya-10.png"
 import { usePathname } from 'next/navigation';
-import AboutUs from '../aboutUs/AboutUs';
 import FoodGallery from './FoodGallery';
 import EnvironmentGallery from './EnvironmentGallery';
 
