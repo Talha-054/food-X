@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
       {/* <Image src={shopLogo} className=' hidden xl:block z-20 h-[100px] w-[100px]  fixed bottom-2 right-2 float-shadow'/> */}
-      <Link href="">
+      <Link href="http://bestellung.indische-tandoori.de">
         <button className="hidden xl:block cursor-pointer text-[#FFFFFF] animate-bounce z-20 bg-[#760124] px-4 py-2 rounded-full fixed bottom-3 right-2">
           Online Bestellen
         </button>

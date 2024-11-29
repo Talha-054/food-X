@@ -1,7 +1,7 @@
 import React from 'react'
-import galleryFood1 from "../../public/assets/gallery-food-4.jpg"
-import galleryFood2 from "../../public/assets/gallery-food-7.jpg"
-import galleryFood3 from "../../public/assets/gallery-food-6.jpg"
+import galleryFood1 from "../../public/assets/samosa-gallery.png"
+import galleryFood2 from "../../public/assets/bhurta.png"
+import galleryFood3 from "../../public/assets/biryani.png"
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 

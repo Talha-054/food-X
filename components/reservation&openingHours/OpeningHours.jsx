@@ -19,7 +19,7 @@ export default function OpeningHours() {
         <motion.div 
             initial= {{x:200, opacity:0}}
             whileInView={{x:0, opacity:1}}
-            transition={{ duration:0.75, delay: 0.15, type:"spring"}}
+            transition={{ duration:0.45, delay: 0.15, type:"spring"}}
             id='openingHoours' 
             className=' bg-[#826A45] p-[1em] py-[10em] w-full lg:flex lg:justify-center lg:items-end lg:pr-[5em] lg:flex-col'>
                 <h2 className='text-[36px] lg:text-[50px] font-body text-[#FFFFFF] font-semibold mb-8 mt-12'>

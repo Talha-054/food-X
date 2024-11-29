@@ -21,11 +21,8 @@ export default function OnlineOrder() {
                     </p>
                   </div>
                   <div className='flex flex-col md:flex-row gap-4 justify-center lg:justify-start items-center  mb-6'>
-                    <Link href="/online-order">
-                      <button  className='rounded-full  py-4 bg-[#760124] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
-                    </Link>
-                    <Link href="/online-order">
-                      <button  className='rounded-full  py-4 bg-[#760124] w-[175px] text-[#FFFFFF] font-semibold'>Make Order</button>
+                    <Link href="http://bestellung.indische-tandoori.de">
+                      <button  className='rounded-full  py-4 bg-[#760124] w-[175px] text-[#FFFFFF] font-semibold'>Online Bestellen</button>
                     </Link>
                   </div>                  
                 </div>

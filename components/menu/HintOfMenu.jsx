@@ -3,8 +3,8 @@
 import React from "react";
 import HintOfMenuCard from "./HintOfMenuCard";
 import img1 from "../../public/assets/menu-food-3.png";
-import img2 from "../../public/assets/menu-food-5.png";
-import img3 from "../../public/assets/menu-food-4.jpg";
+import img2 from "../../public/assets/samosa.png";
+import img3 from "../../public/assets/tikka.png";
 import { motion, useInView } from "framer-motion";
 import bgImg from "../../public/assets/pattern.png";
 import Image from "next/image";
@@ -53,7 +53,7 @@ export default function HintOfMenu() {
     <>
       <div
         className={` overflow-hidden ${
-          isMenu ? "" : "pt-[16em]  p-[1em]"
+          isMenu ? "" : "pt-[20em]  p-[1em]"
         }  pb-[7em] flex flex-wrap justify-center gap-48 2xl:gap-12 items-center relative`}
       >
         {!isMenu &&
@@ -84,14 +84,38 @@ export default function HintOfMenu() {
           />
           
         )} */}
-        <div
-          style={{
-            backgroundImage: "url('assets/pattern.png')",
-            backgroundRepeat: "repeat",
-            backgroundSize: "contain",
-          }}
-          className="absolute h-full w-full top-0 left-0 "
-        />
+        {!isMenu && (
+          <div
+            style={{
+              backgroundImage: "url('assets/pattern.png')",
+              backgroundRepeat: "repeat",
+              backgroundSize: "contain",
+            }}
+            className="absolute h-full w-full top-0 left-0 "
+          />
+        )}
+
+        <div className="flex justify-center items-center gap-5 mb-2 absolute top-0 py-[3em]">
+          <Image
+            style={{ filter: "hue-rotate(56deg) contrast(0.7)" }}
+            alt="decoration image"
+            className="w-[140px]  hidden lg:block h-[23px]"
+            width={140}
+            height={23}
+            src="https://wp.validthemes.net/restan/wp-content/uploads/2024/05/17-2.png"
+          />
+          <h2 className=" text-[20px] font-body text-[#fdb100] font-semibold">
+            {"Ein Hauch von Genuss"}
+          </h2>
+          <Image
+            style={{ filter: "hue-rotate(56deg) contrast(0.7)" }}
+            alt="decoration image"
+            className=" w-[140px] hidden lg:block h-[23px]"
+            width={140}
+            height={23}
+            src="https://wp.validthemes.net/restan/wp-content/uploads/2024/05/18-2.png"
+          />
+        </div>
       </div>
     </>
   );
