@@ -16,34 +16,34 @@ export default function CompleteMenu() {
     <>
         <div className='h-full flex justify-center items-center w-full flex-wrap'>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg1} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={0} src={menuImg1} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg2} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg2} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg3} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg3} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg4} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg4} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg5} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg5} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg6} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg6} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg7} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg7} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg8} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg8} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg9} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg9} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
             <div className='m-0 p-0  flex  '>
-                <Image src={menuImg10} className='w-full md:w-[50vw] xl:w-[33vw]'/>
+                <Image quality={50} src={menuImg10} className='w-full md:w-[50vw] xl:w-[33vw]'/>
             </div>
         </div> 
          

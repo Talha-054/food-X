@@ -65,5 +65,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.repeating-background {
+    background-image: url('../public/assets/menu-hint.jpg');
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+  }
+
 
 

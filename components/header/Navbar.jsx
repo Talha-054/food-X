@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { SlMenu } from "react-icons/sl";
 import Image from "next/image";
-import logo from "../../public/assets/logo-new.jpg";
+import logo from "../../public/assets/logo-new.svg";
 import Link from "next/link";
 import { useSelectedLayoutSegment, useSelectedLayoutSegments } from "next/navigation";
 
