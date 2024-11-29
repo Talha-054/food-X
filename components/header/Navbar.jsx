@@ -1,21 +1,16 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { SlMenu } from "react-icons/sl";
 import Image from "next/image";
 import logo from "../../public/assets/logo-new.jpg";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useSelectedLayoutSegment, useSelectedLayoutSegments } from "next/navigation";
 
 export default function Navbar({ sidebarHandler, sticky }) {
   
-  const path = usePathname()
+  const path = useSelectedLayoutSegment()
   
-  useEffect(()=>{
-    console.log("nav bar render #####################################");
-    console.log(path);
-    
-  })
   
   return (
     <>
@@ -24,18 +19,18 @@ export default function Navbar({ sidebarHandler, sticky }) {
         <SlMenu color="#FFFFFF" className="w-[50px]  md:hidden h-[25px]" />{" "}
       </button>
       <div className="hidden md:w-[40%] md:flex justify-evenly max-w-[400px]">
-        <Link href={"/menu"}>
+        <Link href={"menu"}>
           <h1
-            className={`text-[#ffffff] ${
-              path === "/menu" ? "text-[#fdb100]" : "text-[#ffffff]"
+            className={` ${
+              path === "menu" ? "text-[#fdb100]" : "text-[#ffffff]"
             } font-body font-bold text-[18px] hover:text-[#FFDC8A]`}
           >
             Speisekarte
           </h1>
         </Link>
-        <Link href={"/about-us"}>
+        <Link href={"about-us"}>
           <h1
-            className={`text-[#ffffff] ${
+            className={`${
               path == 'about-us' ? "text-[#fdb100]" : "text-[#ffffff]"
             } font-body font-bold text-[18px] hover:text-[#FFDC8A]`}
           >
@@ -44,8 +39,8 @@ export default function Navbar({ sidebarHandler, sticky }) {
         </Link>
         <Link href={"/"}>
           <h1
-            className={`text-[#ffffff] ${
-              path == "/" ? "text-[#fdb100]" : "text-[#ffffff]"
+            className={` ${
+              path == null ? "text-[#fdb100]" : "text-[#ffffff]"
             } font-body font-bold text-[18px] hover:text-[#FFDC8A]`}
           >
             Startseite
@@ -64,18 +59,18 @@ export default function Navbar({ sidebarHandler, sticky }) {
         {/* <Image src="https://thaya-restaurant.de/wp-content/uploads/2020/09/thaya-logo-light.png" srcSet="https://thaya-restaurant.de/wp-content/uploads/2020/09/thaya-logo-light.png 1x, https://thaya-restaurant.de/wp-content/uploads/2020/09/thaya-logo-light2x.png 2x" width={200} height={199}  alt="Thaya Indian Restaurant Logo" data-retina_logo_url="https://thaya-restaurant.de/wp-content/uploads/2020/09/thaya-logo-light2x.png" className="" _mstalt="640380" _msthash="3" /> */}
       </div>
       <div className="hidden md:w-[40%] md:flex justify-evenly max-w-[400px]">
-        <Link href={"/gallery"}>
+        <Link href={"gallery"}>
           <h1
-            className={`text-[#ffffff] ${
+            className={`${
               path == "gallery" ? "text-[#fdb100]" : "text-[#ffffff]"
             } font-body font-bold text-[18px] hover:text-[#FFDC8A]`}
           >
             Galerie
           </h1>
         </Link>
-        <Link href={"/reservation"}>
+        <Link href={"reservation"}>
           <h1
-            className={`text-[#ffffff] ${
+            className={` ${
               path == "reservation"
                 ? "text-[#fdb100]"
                 : "text-[#ffffff]"
@@ -84,9 +79,9 @@ export default function Navbar({ sidebarHandler, sticky }) {
             Reservierung
           </h1>
         </Link>
-        <Link href={"/contact"}>
+        <Link href={"contact"}>
           <h1
-            className={`text-[#ffffff] ${
+            className={` ${
               path == "contact" ? "text-[#fdb100]" : "text-[#ffffff]"
             } font-body font-bold text-[18px] hover:text-[#FFDC8A]`}
           >

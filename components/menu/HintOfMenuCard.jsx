@@ -33,7 +33,7 @@ export default function HintOfMenuCard({data}) {
           
         </div>
         <div className="absolute plate-img-box inset-0 mx-auto top-[-35%] h-[235px] w-[235px] bg-white border-[#1b1b1b] border-[15px] rounded-full flex justify-center items-center">
-          <Image alt='food images' decoding='async' src={data.src} className='h-[161px] w-[161px] rounded-full z-30'/>
+          <Image layout='fill' objectPosition='center' objectFit='cover' alt='food images' decoding='async' src={data.src} className='h-[161px] w-[161px] rounded-full z-30'/>
         </div>
       </div>
     </>

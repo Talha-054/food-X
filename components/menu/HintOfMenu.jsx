@@ -10,6 +10,7 @@ import bgImg from "../../public/assets/menu-hint.jpg"
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import MenuCard from './MenuCard';
+import CompleteMenu from './CompleteMenu';
 
 
 const menuHintData =  [
@@ -51,7 +52,7 @@ export default function HintOfMenu() {
 
   return (
     <>
-        <div className='min-h-screen overflow-hidden p-[1em] pt-[16em] pb-[7em] flex flex-wrap justify-center gap-48 2xl:gap-12 items-center relative'>
+        <div className={`min-h-screen overflow-hidden ${isMenu? "":"pt-[16em]  p-[1em]"}  pb-[7em] flex flex-wrap justify-center gap-48 2xl:gap-12 items-center relative`}>
           {!isMenu && menuHintData.map((data, index)=>{
             return (
               <motion.div
@@ -66,8 +67,8 @@ export default function HintOfMenu() {
               </motion.div>
             )
           })}
-          {/* {isMenu && <MenuCard />} */}
-          <Image alt='menu background image' layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>
+          {isMenu && <CompleteMenu />}
+          {!isMenu && <Image alt='menu background image' layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>}
         </div>
     </>
   )
