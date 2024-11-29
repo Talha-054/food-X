@@ -9,7 +9,7 @@ export default function MenuCard() {
         <div className='flex justify-center items-center flex-col md:flex-row p-[1em] gap-24 w-full z-10 bg-[#1b1b1b]'>
 
             <div className='grow  min-h-[500px] min-w-[400px] flex justify-center p-[2em]  px-[5em] items-center  relative'>
-               <Image src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute w-full'/>
+               <Image alt="menu page image" src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute w-full'/>
             </div>
 
             <div className='grow h-full w-full md:min-w-[410px]  flex p-[1em] justify-center items-center gap-6 flex-col '>
@@ -22,7 +22,7 @@ export default function MenuCard() {
                 <section className='flex justify-start w-full gap-4 items-center'>
                     
                     <div id="image-circle" className='h-20 w-20 relative'>
-                        <Image src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
+                        <Image alt='food image' src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
                     </div>
                     <div id='menu-content' className='grow flex flex-col justify-around  h-16'>
                         <div id='content-1' className='flex justify-between items-center'>
@@ -44,7 +44,7 @@ export default function MenuCard() {
                 <section className='flex justify-start w-full gap-4 items-center'>
                     
                     <div id="image-circle" className='h-20 w-20 relative'>
-                        <Image src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
+                        <Image alt='food image' src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
                     </div>
                     <div id='menu-content' className='grow flex flex-col justify-around  h-16'>
                         <div id='content-1' className='flex justify-between items-center'>
@@ -66,7 +66,7 @@ export default function MenuCard() {
                 <section className='flex justify-start w-full gap-4 items-center'>
                     
                     <div id="image-circle" className='h-20 w-20 relative'>
-                        <Image src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
+                        <Image alt='food image' src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
                     </div>
                     <div id='menu-content' className='grow flex flex-col justify-around  h-16'>
                         <div id='content-1' className='flex justify-between items-center'>
@@ -88,7 +88,7 @@ export default function MenuCard() {
                 <section className='flex justify-start w-full gap-4 items-center'>
                     
                     <div id="image-circle" className='h-20 w-20 relative'>
-                        <Image src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
+                        <Image alt='food image' src={galleryFood1} layout='fill' objectFit='cover' objectPosition='center' className='absolute rounded-full'/>
                     </div>
                     <div id='menu-content' className='grow flex flex-col justify-around  h-16'>
                         <div id='content-1' className='flex justify-between items-center'>

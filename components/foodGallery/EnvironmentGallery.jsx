@@ -27,7 +27,7 @@ export default function EnvironmentGallery() {
             viewport={{margin: "100px"}} 
             id="food-1" 
             className='relative min-h-[350px] w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={thaya4} className='absolute w-full h-full top-0'/>
+            <Image alt='restaurant image' layout='fill' objectPosition='center' objectFit='cover' src={thaya4} className='absolute w-full h-full top-0'/>
         </motion.div>
 
         <motion.div 
@@ -37,7 +37,7 @@ export default function EnvironmentGallery() {
             viewport={{margin: "100px"}} 
             id="food-2"
             className='relative min-h-[350px]  w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={thaya7} className='absolute w-full h-full top-0'/>
+            <Image alt='restaurant image' layout='fill' objectPosition='center' objectFit='cover' src={thaya7} className='absolute w-full h-full top-0'/>
         </motion.div>
 
         <motion.div
@@ -47,7 +47,7 @@ export default function EnvironmentGallery() {
             viewport={{margin: "50px"}}  
             id="food-3" 
             className='relative min-h-[350px]  w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={thaya10} className='absolute w-full h-full top-0'/>
+            <Image alt='restaurant image' layout='fill' objectPosition='center' objectFit='cover' src={thaya10} className='absolute w-full h-full top-0'/>
         </motion.div> 
 
         {/* {

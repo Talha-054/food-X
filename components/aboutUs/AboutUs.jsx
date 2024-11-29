@@ -8,11 +8,13 @@ import { motion } from 'framer-motion';
 // import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
 import abtUsImg1 from "../../public/assets/thaya-6.png"
 import abtUsImg2 from "../../public/assets/thaya-9.png"
+import { usePathname } from 'next/navigation';
+import Gallery from '../foodGallery/Gallery';
 
 export default function AboutUs() {
 
   
- 
+ const path = usePathname()
 
   return (
     <>
@@ -29,7 +31,7 @@ export default function AboutUs() {
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
                 className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
-                  <Image layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
+                  <Image alt='restaurant image 1' layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
               </motion.div>
               
               <motion.div
@@ -38,7 +40,7 @@ export default function AboutUs() {
                 transition={{duration: 1, type: "spring"}}  
                 id="welcome-note-img-2" 
                 className="relative hidden lg:block w-full h-[300px] lg:w-[360px] lg:h-[525px]">
-                  <Image layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg2} className='absolute h-full w-full top-0'/>
+                  <Image alt='restaurant image 2' layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg2} className='absolute h-full w-full top-0'/>
               </motion.div>
               
               
@@ -51,7 +53,7 @@ export default function AboutUs() {
           </motion.div>
         </motion.div>
 
-        
+        {path === "/about-us"? <Gallery /> : ""}        
     </>
   )
 }

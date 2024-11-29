@@ -46,11 +46,9 @@ export default function FooterDetails() {
                   Von der Vorspeise bis zum Dessert – lassen Sie sich von der Vielfalt der indischen Küche und ihren einzigartigen Gewürzen verzaubern.
                   </p>
                   <div className='flex gap-2'>
-                    {aboutUsData.map((record)=>{
+                    {aboutUsData.map((record, index)=>{
                       return (
-                        <>
-                          <span className="w-[40px] h-[40px] bg-[#3F3F3F] flex justify-center items-center" key={record.name}>{record.logo}</span>
-                        </>
+                        <span  className="w-[40px] h-[40px] bg-[#3F3F3F] flex justify-center items-center" key={record.name}>{record.logo}</span>
                       )
                     })}
                   </div>
@@ -74,12 +72,10 @@ export default function FooterDetails() {
                   <div className='flex flex-col gap-6'>
                     {contactData.map((record)=>{
                       return (
-                        <>
                         <div className='flex gap-4 justify-start items-center' key={record.name}>
                           <span className='bg-[#760124] h-[35px] w-[35px] flex justify-center items-center'>{record.icon}</span>
                           <p className='text-[16px] text-[#FFFFFF] font-medium font-body md:max-w-[200px]'>{record.text}</p>
                         </div>
-                        </>
                       )
                     })}
                   </div>
@@ -100,7 +96,7 @@ export default function FooterDetails() {
             </div>
 
             <div id="footer-top-border" className='absolute hidden xl:block right-0 top-[-7%] w-[85vw] h-[30px] z-20 '>
-              <Image src={footerBorderImg} className='absolute w-full h-full'/>
+              <Image alt='footer background image' src={footerBorderImg} className='absolute w-full h-full'/>
             </div>
           </motion.div>
     </>

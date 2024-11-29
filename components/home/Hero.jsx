@@ -14,10 +14,10 @@ export default function Hero() {
           </div>
           
           <div className='w-[50%] h-full absolute top-0 left-0 '>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={hero2} className='absolute h-full rotate-z w-full top-0 ' />
+            <Image alt='hero image 1' layout='fill' objectPosition='center' objectFit='cover' src={hero2} className='absolute h-full rotate-z w-full top-0 ' />
           </div>
           <div className='w-[50%] h-full absolute top-0 right-0'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={heroImg} className='absolute  h-full w-full top-0 ' />
+            <Image alt='hero image 2' layout='fill' objectPosition='center' objectFit='cover' src={heroImg} className='absolute  h-full w-full top-0 ' />
           </div>
           
         </div>

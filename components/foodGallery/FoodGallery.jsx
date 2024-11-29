@@ -1,7 +1,7 @@
 import React from 'react'
-import galleryFood1 from "../../public/assets/gallery-food-1.jpg"
-import galleryFood2 from "../../public/assets/gallery-food-2.jpg"
-import galleryFood3 from "../../public/assets/gallery-food-3.jpg"
+import galleryFood1 from "../../public/assets/gallery-food-4.jpg"
+import galleryFood2 from "../../public/assets/gallery-food-5.jpg"
+import galleryFood3 from "../../public/assets/gallery-food-6.jpg"
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
@@ -18,7 +18,7 @@ export default function FoodGallery() {
             viewport={{amount: "some"}} 
             id="food-1" 
             className='relative min-h-[350px] w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood1} className='absolute w-full h-full top-0'/>
+            <Image alt='food image' layout='fill' objectPosition='center' objectFit='cover' src={galleryFood1} className='absolute w-full h-full top-0'/>
         </motion.div>
 
         <motion.div 
@@ -28,7 +28,7 @@ export default function FoodGallery() {
             viewport={{amount:"some"}} 
             id="food-2"
             className='relative min-h-[350px]  w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood2} className='absolute w-full h-full top-0'/>
+            <Image alt='food image' layout='fill' objectPosition='center' objectFit='cover' src={galleryFood2} className='absolute w-full h-full top-0'/>
         </motion.div>
 
         <motion.div
@@ -38,7 +38,7 @@ export default function FoodGallery() {
             viewport={{amount: "some"}}  
             id="food-3" 
             className='relative min-h-[350px]  w-full'>
-            <Image layout='fill' objectPosition='center' objectFit='cover' src={galleryFood3} className='absolute w-full h-full top-0'/>
+            <Image alt='food image' layout='fill' objectPosition='center' objectFit='cover' src={galleryFood3} className='absolute w-full h-full top-0'/>
         </motion.div>
 
 

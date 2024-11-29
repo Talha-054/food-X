@@ -27,7 +27,7 @@ export default function OnlineOrderImg() {
         ref={orderImgRef} 
         id="section-1" 
         className='grow  p-[1em]  flex justify-center items-center'>
-            <Image src={bgImg} className=' h-auto w-[100%] sm:w-[415px] md:w-[596px] lg:max-w-[500px]'/>
+            <Image alt='decoration image' src={bgImg} className=' h-auto w-[100%] sm:w-[415px] md:w-[596px] lg:max-w-[500px]'/>
         </motion.div>
     </>
   )

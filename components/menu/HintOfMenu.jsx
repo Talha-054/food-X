@@ -2,9 +2,9 @@
 
 import React from 'react'
 import HintOfMenuCard from './HintOfMenuCard'
-import img1 from "../../public/assets/menu-food-1.png"
-import img2 from "../../public/assets/menu-food-2.png"
-import img3 from "../../public/assets/menu-food-3.png"
+import img1 from "../../public/assets/menu-food-3.png"
+import img2 from "../../public/assets/menu-food-5.png"
+import img3 from "../../public/assets/menu-food-4.jpg"
 import { motion, useInView } from 'framer-motion';
 import bgImg from "../../public/assets/menu-hint.jpg"
 import Image from 'next/image';
@@ -54,22 +54,20 @@ export default function HintOfMenu() {
         <div className='min-h-screen overflow-hidden p-[1em] pt-[16em] pb-[7em] flex flex-wrap justify-center gap-48 2xl:gap-12 items-center relative'>
           {!isMenu && menuHintData.map((data, index)=>{
             return (
-              <>
-                <motion.div
-                  className='w-full flex  md:w-auto z-10'
-                  initial= {{scale: 0.5, opacity: 0}}
-                  whileInView={{scale:1, opacity: 1}}
-                  transition={{delay: 0.10*index, type:"spring"}}
-                  viewport={{margin: "50px"}}
-                >
-                  <HintOfMenuCard data={data}/>
-                </motion.div>
-                
-              </>
+              <motion.div
+                key={index}
+                className='w-full flex  md:w-auto z-10'
+                initial= {{scale: 0.5, opacity: 0}}
+                whileInView={{scale:1, opacity: 1}}
+                transition={{delay: 0.10*index, type:"spring"}}
+                viewport={{margin: "50px"}}
+              >
+                <HintOfMenuCard data={data}/>
+              </motion.div>
             )
           })}
           {/* {isMenu && <MenuCard />} */}
-          <Image layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>
+          <Image alt='menu background image' layout='fill' objectPosition='center' objectFit='cover' src={bgImg} className='absolute h-full w-full top-0'/>
         </div>
     </>
   )

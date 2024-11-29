@@ -27,13 +27,13 @@ export default function OpeningHours() {
                 </h2>
                 {openingTimes.map((record, index)=>{
                     return (
-                        <>
+                        <React.Fragment key={index}>
                             <div key={record.day} className='flex justify-between mb-4 lg:w-[400px]'>
                                 <h3 className='text-[16px] font-body text-[#FFFFFF] font-semibold'>{record.day}</h3>
                                 <h3 className='text-[16px] font-body text-[#FFFFFF] font-semibold'>{record.timing}</h3>
                             </div>
                             {index < 6 && <hr key={index} className='h-[10px] text-[#CCCCCC] lg:w-[400px]'/>} 
-                        </>
+                        </React.Fragment>
                     )
                 })}
             </motion.div>
