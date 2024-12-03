@@ -43,50 +43,50 @@ export default function Hero() {
   return (
     <>
       <div className={`h-[100vh]   relative`}>
-        <Header />
+        
         <div
           id="hero-modal"
           className="absolute h-full top-0 w-full bg-black  opacity-35 z-10"
         ></div>
-
-      <Swiper slidesPerView={1} loop={true}
-            autoplay={{
-              delay: 2500,
-            }}  modules={[Pagination, Autoplay]} className="w-full h-full">
-        {slides.map((item)=>{
-          return (
-            <>
-              <SwiperSlide className="text-white h-full w-full">
-                <div className="w-full h-full relative">
-                  <div className={`${item.img2? "w-[50%] ": "w-full"} h-full absolute top-0  left-0 `}>
-                      <Image
-                        alt="hero image 1"
-                        layout="fill"
-                        objectPosition="center"
-                        objectFit="cover"
-                        src={item.img1}
-                        className="absolute h-full  w-full top-0 "
-                      />
-                    </div>
-                    {item.img2 && <div className="w-[50%] h-full absolute top-0 right-0 ">
-                      <Image
-                        alt="hero image 2"
-                        layout="fill"
-                        objectPosition="center"
-                        objectFit="cover"
-                        src={item.img2}
-                        className="absolute  h-full w-full top-0 "
-                      />
-                    </div>}
-                  </div>
-              </SwiperSlide>
+        <Header /> 
+        <Swiper slidesPerView={1} loop={true}
+              autoplay={{
+                delay: 2500,
+              }}  modules={[Pagination, Autoplay]} className="w-full h-full">   
             
-            </>
-          )
-        })}
-        
-        
-      </Swiper>
+          {slides.map((item)=>{
+            return (
+              <>
+                <SwiperSlide className="text-white h-full w-full">
+                  
+                  <div className="w-full h-full relative">  
+                    <div className={`${item.img2? "w-[50%] ": "w-full"} h-full absolute top-0  left-0 `}>
+                        <Image
+                          alt="hero image 1"
+                          layout="fill"
+                          objectPosition="center"
+                          objectFit="cover"
+                          src={item.img1}
+                          className="absolute h-full  w-full top-0 "
+                        />
+                      </div>
+                      {item.img2 && <div className="w-[50%] h-full absolute top-0 right-0 ">
+                        <Image
+                          alt="hero image 2"
+                          layout="fill"
+                          objectPosition="center"
+                          objectFit="cover"
+                          src={item.img2}
+                          className="absolute  h-full w-full top-0 "
+                        />
+                      </div>}
+                    </div>
+                </SwiperSlide>
+              
+              </>
+            )
+          })}
+        </Swiper>
 
         
       </div>

@@ -32,17 +32,11 @@ export default function Header() {
       <header
         id="header"
         className={`lg:h-auto ${
-          sticky
-            ? "fixed w-full z-[99] top-0 bg-gradient-to-b from-black to-transparent"
-            : "fixed w-full z-[99] top-0 bg-gradient-to-b from-black to-transparent"
-        } duration-300 overflow-hidden z-20 px-[12px] py-2 pt-[5px] flex  justify-center lg:justify-center gap-12 items-center ${
+          sticky ? "fixed" : ""
+        } duration-300 overflow-hidden px-[12px] py-2 pt-[5px] flex  justify-center lg:justify-center gap-12 items-center w-full z-[99] top-0 bg-gradient-to-b from-black to-transparent ${
           pathName == "/"
-            ? ""
-            : `${
-                sticky
-                  ? "bg-gradient-to-b from-black to-transparent sticky"
-                  : "bg-[#1b1b1b]"
-              }`
+            ? "fixed "
+            : `${sticky? "sticky": "relative"}`
         }`}
       >
         <Navbar sticky={sticky} sidebarHandler={toogleSidebar} />

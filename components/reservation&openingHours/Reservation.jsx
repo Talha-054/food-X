@@ -4,12 +4,15 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MdError } from "react-icons/md";
 import { sendEmail } from "utils/api-calls";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 export default function Reservation() {
   const [phoneNo, setPhoneNo] = useState();
   const [persons, setPersons] = useState();
   const [date, setDate] = useState();
   const [time, setTime] = useState();
+  const [calender, setCalender] = useState(false)
   //   const [errorMsg, setErrorMsg] = useState({
   //     name: [],
   //     message: {
@@ -34,6 +37,11 @@ export default function Reservation() {
     }
   }, [isPhoneNoValid, isPersonsValid, isDateValid, isTimeValid]);
 
+  useEffect(()=>{
+    console.log(date);
+    
+  },[date])
+
   function handlePhone(e) {
     if (e.target.value.length <= 0) {
       setIsPhoneNoValid(false);
@@ -56,18 +64,22 @@ export default function Reservation() {
       : setIsPersonsValid(false);
   }
 
-  function handleDate(e) {
-    if (e.target.value.length <= 0) {
+  function handleDate(value,event) {
+    console.log(value);
+    console.log("func fired");
+    
+    
+    if (value.length <= 0) {
       setIsDateValid(false);
     }
-    setDate(e.target.value);
+    setDate(value);
     const validPattern = new RegExp("[0-9]{3}[/][0-9]{3}[/][0-9]{2,5}");
-    validPattern.test(e.target.value)
+    validPattern.test(value)
       ? setIsDateValid(true)
       : setIsDateValid(false);
     setIsDateValid(true);
-    console.log(e.target.value);
-    console.log(validPattern.test(e.target.value));
+    console.log(value);
+    console.log(validPattern.test(value));
   }
 
   function handleTime(e) {
@@ -158,14 +170,16 @@ export default function Reservation() {
                             <MdError className='mr-2' size={20} color='red'/> {errorMsg.message.person} !
                         </div>} */}
           </div>
-          <div id="date" className="flex flex-col gap-2 mb-6 w-full">
+          <div id="date" className="flex flex-col gap-2 mb-6 w-full duration-300 relative">
             <label className="text-[16px] lg:text-[20px] font-body font-semibold text-[#FFFFFF] text-start">
               Datum
             </label>
             <input
               name="date"
-              onChange={handleDate}
-              type="date"
+              // onChange={handleDate}
+              onFocus={()=> setCalender(true)}
+              onBlur = {()=> setCalender(false)}
+              value={date}
               placeholder="date"
               className={`${
                 isDateValid
@@ -173,6 +187,7 @@ export default function Reservation() {
                   : "text-red-600 font-semibold "
               } w-full px-2 max-w-[650px] lg:w-[400px] h-[50px] rounded-[5px]`}
             />
+           {calender && <Calendar  value={date} onChange={(value,event)=> console.log(value,event)} className={"bg-white w-[300px] rounded-lg absolute opacity-100 top-0 z-[99]"}/>}
             {/* {errorMsg.name.includes('date') && <div id='error-message' className='flex rounded-md text-red-600 border-[1px] border-red-600 justify-start items-center p-[0.5em]'>
                             <MdError className='mr-2' size={20} color='red'/> {errorMsg.message.date} !
                         </div>} */}
@@ -196,7 +211,7 @@ export default function Reservation() {
                             <MdError className='mr-2' size={20} color='red'/> {errorMsg.message.time} !
                         </div>} */}
           </div>
-          <div className="w-full flex justify-start items-center gap-4">
+          <div className="w-full flex justify-start items-center gap-4 pb-[1em]">
             <button
               disabled={formValid ? false : true}
               onClick={handleFormSubmission}
@@ -220,7 +235,6 @@ export default function Reservation() {
                 Anrufen <br /> 0471 961 579 33
               </button>
             </a>
-            
           </div>
         </div>
       </motion.div>
