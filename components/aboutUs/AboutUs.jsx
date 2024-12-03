@@ -6,10 +6,10 @@ import WelcomeNote from './WelcomeNote'
 import { motion } from 'framer-motion';
 // import abtUsImg1 from "../../public/assets/welcome-note-1.jpg"
 // import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
-import abtUsImg1 from "../../public/assets/thaya-6.png"
-import abtUsImg2 from "../../public/assets/thaya-9.png"
-import abtUsImg3 from "../../public/assets/indian-dishes.png"
-import abtUsImg4 from "../../public/assets/vege-pic.png"
+import abtUsImg1 from "../../public/assets/restaurant-images/thaya-6.png"
+import abtUsImg2 from "../../public/assets/restaurant-images/thaya-9.png"
+import abtUsImg3 from "../../public/assets/food-images/indian-dishes.png"
+import abtUsImg4 from "../../public/assets/food-images/vege-pic.png"
 import { usePathname } from 'next/navigation';
 import Gallery from '../foodGallery/Gallery';
 

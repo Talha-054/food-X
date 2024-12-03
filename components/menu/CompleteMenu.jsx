@@ -1,14 +1,14 @@
 import React from 'react'
-import menuImg1 from "../../public/assets/1.jpeg"
-import menuImg2 from "../../public/assets/2.jpeg"
-import menuImg3 from "../../public/assets/3.jpeg"
-import menuImg4 from "../../public/assets/4.jpeg"
-import menuImg5 from "../../public/assets/5.jpeg"
-import menuImg6 from "../../public/assets/6.jpeg"
-import menuImg7 from "../../public/assets/7.jpeg"
-import menuImg8 from "../../public/assets/8.jpeg"
-import menuImg9 from "../../public/assets/9.jpeg"
-import menuImg10 from "../../public/assets/10.jpeg"
+import menuImg1 from "../../public/assets/menu/1.jpeg"
+import menuImg2 from "../../public/assets/menu/2.jpeg"
+import menuImg3 from "../../public/assets/menu/3.jpeg"
+import menuImg4 from "../../public/assets/menu/4.jpeg"
+import menuImg5 from "../../public/assets/menu/5.jpeg"
+import menuImg6 from "../../public/assets/menu/6.jpeg"
+import menuImg7 from "../../public/assets/menu/7.jpeg"
+import menuImg8 from "../../public/assets/menu/8.jpeg"
+import menuImg9 from "../../public/assets/menu/9.jpeg"
+import menuImg10 from "../../public/assets/menu/10.jpeg"
 import Image from 'next/image'
 
 export default function CompleteMenu() {

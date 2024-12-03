@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import bgImg from '../../public/assets/online-order-main-img.png'
+import bgImg from '../../public/assets/food-images/online-order-main-img.png'
 import Image from 'next/image'
 import { useScroll } from 'framer-motion';
 import { useRef } from 'react';

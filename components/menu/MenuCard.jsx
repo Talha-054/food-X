@@ -1,5 +1,5 @@
 import React from 'react'
-import galleryFood1 from "../../public/assets/gallery-food-4.jpg"
+import galleryFood1 from "../../public/assets/food-images/gallery-food-4.jpg"
 import Image from 'next/image'
 
 

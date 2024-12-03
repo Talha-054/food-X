@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import restaurantDrawing from "../../public/assets/footer-restaurant.png";
+import restaurantDrawing from "../../public/assets/decoration/footer-restaurant.png";
 import FooterContactInfo from "./FooterIContactInfo";
 import FooterDetails from "./FooterDetails";
 import Link from "next/link";

@@ -2,11 +2,11 @@
 
 import React from "react";
 import HintOfMenuCard from "./HintOfMenuCard";
-import img1 from "../../public/assets/vege-pic.png";
-import img2 from "../../public/assets/samosa.png";
-import img3 from "../../public/assets/tikka.png";
+import img1 from "../../public/assets/food-images/vege-pic.png";
+import img2 from "../../public/assets/food-images/samosa.png";
+import img3 from "../../public/assets/food-images/tikka.png";
 import { motion, useInView } from "framer-motion";
-import bgImg from "../../public/assets/pattern.png";
+import bgImg from "../../public/assets/decoration/pattern.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MenuCard from "./MenuCard";
@@ -89,7 +89,7 @@ export default function HintOfMenu() {
         {!isMenu && (
           <div
             style={{
-              backgroundImage: "url('assets/pattern.png')",
+              backgroundImage: "url('assets/decoration/pattern.png')",
               backgroundRepeat: "repeat",
               backgroundSize: "contain",
             }}

@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import logo from "../../public/assets/logo-new.jpg";
+import logo from "../../public/assets/logo/logo-new.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import restaurantDrawing from "../../public/assets/footer-restaurant.png";
+import restaurantDrawing from "../../public/assets/decoration/footer-restaurant.png";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";

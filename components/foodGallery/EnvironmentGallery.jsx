@@ -1,15 +1,15 @@
 import React from 'react'
-import thaya0 from "../../public/assets/thaya-0.png"
-import thaya1 from "../../public/assets/thaya-1.png"
-import thaya2 from "../../public/assets/thaya-2.png"
-import thaya3 from "../../public/assets/thaya-3.png"
-import thaya4 from "../../public/assets/thaya-4.png"
-import thaya5 from "../../public/assets/thaya-5.png"
-import thaya6 from "../../public/assets/thaya-6.png"
-import thaya7 from "../../public/assets/thaya-7.png"
-import thaya8 from "../../public/assets/thaya-8.png"
-import thaya9 from "../../public/assets/thaya-9.png"
-import thaya10 from "../../public/assets/thaya-10.png"
+import thaya0 from "../../public/assets/restaurant-images/thaya-0.png"
+import thaya1 from "../../public/assets/restaurant-images/thaya-1.png"
+import thaya2 from "../../public/assets/restaurant-images/thaya-2.png"
+import thaya3 from "../../public/assets/restaurant-images/thaya-3.png"
+import thaya4 from "../../public/assets/restaurant-images/thaya-4.png"
+import thaya5 from "../../public/assets/restaurant-images/thaya-5.png"
+import thaya6 from "../../public/assets/restaurant-images/thaya-6.png"
+import thaya7 from "../../public/assets/restaurant-images/thaya-7.png"
+import thaya8 from "../../public/assets/restaurant-images/thaya-8.png"
+import thaya9 from "../../public/assets/restaurant-images/thaya-9.png"
+import thaya10 from "../../public/assets/restaurant-images/thaya-10.png"
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 

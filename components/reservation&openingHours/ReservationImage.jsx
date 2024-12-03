@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import reservationImg from "../../public/assets/thaya-0.png"
+import reservationImg from "../../public/assets/restaurant-images/thaya-0.png"
 import Image from 'next/image';
 
 export default function ReservationImage() {

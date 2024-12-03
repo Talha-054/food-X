@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import bgImg from "../../public/assets/bg-impressum.jpg"
+import bgImg from "../../public/assets/decoration/bg-impressum.jpg"
 
 export default function LinksHeader({heading, subHeading}) {
   return (
