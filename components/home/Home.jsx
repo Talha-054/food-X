@@ -6,6 +6,8 @@ import HintOfMenu from '../menu/HintOfMenu'
 import OnlineOrder from '../order/OnlineOrder'
 import ReservationAndOpeningHrs from '../reservation&openingHours/ReservationAndOpeningHrs'
 import Gallery from '../foodGallery/Gallery'
+import HeroButtons from './HeroButtons'
+import GalleryButton from './GalleryButton'
 
 
 export default function Home() {
@@ -13,9 +15,11 @@ export default function Home() {
     <>
       <div className=' bg-[#1b1b1b] '>
         <Hero />
+        <HeroButtons />
         <AboutUs />
         <HintOfMenu />
         <Gallery />
+        <GalleryButton />
         <div className='h-[10vh] bg-[#262525]'></div>
         <ReservationAndOpeningHrs />
         <div className='h-[10vh] bg-[#262525]'></div>

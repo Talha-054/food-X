@@ -2,7 +2,7 @@
 
 import React from "react";
 import HintOfMenuCard from "./HintOfMenuCard";
-import img1 from "../../public/assets/menu-food-3.png";
+import img1 from "../../public/assets/vege-pic.png";
 import img2 from "../../public/assets/samosa.png";
 import img3 from "../../public/assets/tikka.png";
 import { motion, useInView } from "framer-motion";
@@ -11,6 +11,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MenuCard from "./MenuCard";
 import CompleteMenu from "./CompleteMenu";
+import DownloadMenu from "./DownloadMenu";
 
 const menuHintData = [
   {
@@ -34,7 +35,7 @@ const menuHintData = [
     ],
   },
   {
-    heading: "Tandoori Grillgerichte",
+    heading: "Tandoori",
     src: img3,
     items: [
       { name: "Tandoori Chicken Tikka", priceRange: "17,00 €" },
@@ -72,6 +73,7 @@ export default function HintOfMenu() {
             );
           })}
         {isMenu && <CompleteMenu />}
+        {isMenu && <DownloadMenu />}
         {/* {!isMenu && (
           <Image
           style={{backgroundImage: "url('assets/pattern.png')", backgroundRepeat: "repeat", backgroundSize: "cover", opacity:0}}

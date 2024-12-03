@@ -26,7 +26,7 @@ export default function HintOfMenuCard({data}) {
           })}
           <div className='flex justify-center items-center mt-[1em]'>
             <Link href={"/menu"}>
-              <button className='rounded-full px-4 py-4 bg-[#760124] w-[185px] text-[#FFFFFF] font-semibold'>Bestellung aufgeben</button>
+              <button className='rounded-full px-4 py-4 bg-[#760124] w-[185px] text-[#FFFFFF] font-semibold'>Speisekarte</button>
             </Link>
             
           </div>

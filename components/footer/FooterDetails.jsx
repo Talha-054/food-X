@@ -13,6 +13,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import footerBorderImg from "../../public/assets/footer-border.png";
 import Link from "next/link";
+import { RiVisaLine } from "react-icons/ri";
+import { FaCcMastercard } from "react-icons/fa";
+import { TbCash } from "react-icons/tb";
+import { MdOutlineCreditCard } from "react-icons/md";
 
 const aboutUsData = [
   { name: "youtube", logo: <FaYoutube size={15} color="white" /> },
@@ -26,17 +30,18 @@ const aboutUsData = [
 const contactData = [
   {
     name: "location",
-    text: "Ratiborerstr. 4027578 Bremerhaven",
+    text: "Ratiborerstr. 40",
+    text2:"27578 Bremerhaven",
     icon: <IoLocationSharp size={20} color="white" />,
   },
   {
     name: "cell-number",
-    text: "+49(0)47196157933",
+    text: "+49 (0) 471 96 15 70 33",
     icon: <FaPhone size={20} color="white" />,
   },
   {
     name: "email",
-    text: "info(at)thaya-restaurant.de",
+    text: "info@indische-tandoori.de",
     icon: <MdEmail size={20} color="white" />,
   },
 ];
@@ -116,6 +121,8 @@ export default function FooterDetails() {
                       </span>
                       <p className="text-[16px] text-[#FFFFFF] font-medium font-body md:max-w-[200px]">
                         {record.text}
+                        <br />
+                        {record.text2? record.text2 : ""}
                       </p>
                     </div>
                   );
@@ -146,6 +153,12 @@ export default function FooterDetails() {
                     Zahlungsweisen
                   </p>
                 </Link>
+                <div className="flex justify-evenly items-center gap-2">
+                  <span><RiVisaLine color="white" size={45}/></span>
+                  <span><FaCcMastercard color="white" size={45}/></span>
+                  <span><TbCash color="white" size={45}/></span>
+                  <span className="flex gap-1 text-[#FFFFFF]"><MdOutlineCreditCard color="white" size={45}/>EC</span>
+                </div>
               </div>
             </div>
           </div>

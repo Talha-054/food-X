@@ -8,6 +8,8 @@ import { motion } from 'framer-motion';
 // import abtUsImg2 from "../../public/assets/welcome-note-2.jpg"
 import abtUsImg1 from "../../public/assets/thaya-6.png"
 import abtUsImg2 from "../../public/assets/thaya-9.png"
+import abtUsImg3 from "../../public/assets/indian-dishes.png"
+import abtUsImg4 from "../../public/assets/vege-pic.png"
 import { usePathname } from 'next/navigation';
 import Gallery from '../foodGallery/Gallery';
 
@@ -31,7 +33,7 @@ export default function AboutUs() {
                 transition={{duration: 0.75, type: "spring"}} 
                 id="welcome-note-img" 
                 className="w-full h-[300px] lg:w-[360px] lg:h-[525px] relative">
-                  <Image alt='restaurant image 1' layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg1} className='absolute h-full w-full top-0  '/>
+                  <Image alt='restaurant image 1' layout='fill' objectPosition='center' objectFit='cover' src={path === "/menu"? abtUsImg3 :abtUsImg1} className='absolute h-full w-full top-0  '/>
               </motion.div>
               
               <motion.div
@@ -40,7 +42,7 @@ export default function AboutUs() {
                 transition={{duration: 1, type: "spring"}}  
                 id="welcome-note-img-2" 
                 className="relative hidden lg:block w-full h-[300px] lg:w-[360px] lg:h-[525px]">
-                  <Image alt='restaurant image 2' layout='fill' objectPosition='center' objectFit='cover' src={abtUsImg2} className='absolute h-full w-full top-0'/>
+                  <Image alt='restaurant image 2' layout='fill' objectPosition='center' objectFit='cover' src={path === "/menu"? abtUsImg4 :abtUsImg2} className='absolute h-full w-full top-0'/>
               </motion.div>
               
               

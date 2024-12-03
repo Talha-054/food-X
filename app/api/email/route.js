@@ -34,7 +34,7 @@ export async function POST(request) {
         text: `
           Name: ${name}, 
         `,
-        // Html:
+        html:``
       };
   
       // Send the email

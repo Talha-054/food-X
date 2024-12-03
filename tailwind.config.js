@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -27,8 +28,8 @@ module.exports = {
       fontFamily : {
         body : ["Marcellus"]
       }
-    },
-  },
-  plugins: [],
+    }
+  }
+
 }
 

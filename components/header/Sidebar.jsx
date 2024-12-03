@@ -10,12 +10,13 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 
 const sidebarData = [
-  { href: "/", text: "Home", activeSegment: null },
-  { href: "/about-us", text: "AboutUs", activeSegment: "about-us" },
-  { href: "/contact", text: "Contact", activeSegment: "contact" },
-  { href: "/gallery", text: "Gallery", activeSegment: "gallery" },
-  { href: "/reservation", text: "Booking", activeSegment: "reservation" },
-  { href: "/menu", text: "Menu", activeSegment: "menu" },
+  { href: "/", text: "Startseite", activeSegment: null },
+  { href: "/menu", text: "Speisekarte", activeSegment: "menu" },
+  { href: "/reservation", text: "Reservieren", activeSegment: "reservation" },
+  { href: "http://bestellung.indische-tandoori.de", text: "Online Bestellen", activeSegment: "#" },
+  { href: "/gallery", text: "Gallery ", activeSegment: "gallery" },
+  { href: "/about-us", text: "Über uns", activeSegment: "about-us" },
+  { href: "/contact", text: "Kontakt", activeSegment: "contact" },
 ];
 
 export default function Sidebar({
@@ -53,7 +54,7 @@ export default function Sidebar({
                   <>
                     <div
                       key={index}
-                      className="w-20 h-20 border-[#EB5B00] border-[1px] z-10 rounded-full flex justify-center items-center"
+                      className="w-24  h-24 border-[#EB5B00] border-[1px] z-10 rounded-full flex justify-center items-center"
                     >
                       <Link
                         onClick={handleSidebar}
@@ -62,16 +63,16 @@ export default function Sidebar({
                           activeSegment == item.activeSegment
                             ? "text-[#760124]"
                             : "text-[#FFFFFF]"
-                        } font-body font-bold text-[16px] hover:text-[#FFDC8A]`}
+                        } font-body font-bold text-[16px] hover:text-[#FFDC8A] `}
                       >
-                        {item.text}
+                        <p className="text-center">{item.text}</p>
                       </Link>
                     </div>
                   </>
                 );
               })}
 
-              <div className="flex w-full justify-center items-center">
+              <div className="flex w-full md:hidden justify-center items-center">
                 <Image
                   src={restaurantDrawing}
                   width={215}
